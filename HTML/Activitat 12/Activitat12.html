@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta chatset="utf-8"/>
+        <title> Pàgina de Taras Grynkiv</title>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    </head>
+    <body>
+        <h1>Activitat 12: Accesibilitat </h1>    
+
+        <h2>Cafetería Mule</h2>
+        <h3>Localización</h3>
+        <p>Nos encontramos en la <address><a href="geo:39.4597563,-0.3737169">calle Maldonado número 12</a></address></p>
+        <h3>Nuestra carta</h3>
+        <ul>
+          <li><a href="#cafe">Café</a></li>
+          <li><a href="#te">Té</a></li>
+          <li><a href="#zumos">Zumos</a></li>
+        </ul>
+
+        <h2>Crea un hipervinvle de omisió</h2>
+        <a href="#main">Saltar al contenido</a>
+
+        <main id="main">
+            <!-- contingut -->
+        </main>
+
+        <h2>TOTS ELS INPUT HAN DE CONTENIR LABEL</h2>
+
+        <label for="pez">Pez favorito</label>
+            <select name="mi-pez-favorito" id="pez">
+                <option value="1">Dory</option>
+                <option value="2">Nemo</option>
+                <option value="3">Bruce</option>
+            </select>
+
+            <h3>ALTERNATIVA</h3>
+
+        <select name="mi-pez-favorito">
+            <option value="" aria-label="Pez favorito" disabled selected>Pez favorito</option>
+            <option value="1">Dory</option>
+            <option value="2">Nemo</option>
+            <option value="3">Bruce</option>
+        </select>
+
+        <h2>Utilitzar aria-label en botons o hipervincles</h2>
+
+        <button type="button" aria-label="Cerrar">X</button>
+
+        <h2>Aplica aria-label en elements decoratius</h2>
+
+        <h1>Fruta saludable</h1>
+        <ul>
+            <li><span aria-hidden="true">🍎</span>Poma</li>
+            <li><span aria-hidden="true">🍌</span>Platan</li>
+            <li><span aria-hidden="true">🍓</span>Maduixa</li>
+        </ul>
+
+        <h2>Utilitza scope en les caselles d'encapçalament</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan</td>
+                    <td>45</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Utilitza contingut per estructures</h2>
+
+        <aside>
+            <p>Recuerda que para comentar debes ser un gran conquistador e ir a <a href="registro.html">registro</a></p>
+        </aside>
+        <main class="comentarios">
+            <h3>La accesibilidad web</h3>
+            <p>La accesibilidad web es la posibilidad de que cualquier persona pueda utilizar una página web, independientemente de sus capacidades o limitaciones.</p>
+            <h4>Comentarios</h4>
+            <article>
+                <h4>Keanu Reeves</h4>
+                <p>Gracias por pensar en mi daltonismo</p>
+            </article>
+            <article>
+                <h4>Andrea Bocell</h4>
+                <p>Con mi lector de pantalla leo perfectamente tu web.</p>
+            </article>
+            <article>
+                <h4>Stephen Hawking</h4>
+                <p>Puedo navegar con mi raton asistido. Las posibilidades son infinitas.</p>
+            </article>
+        </article>
+        
+        <h2>Incloir sempre text alternatiu en les imatges</h2>
+        
+        <img src="asdy7as8f6a.webp" alt="Gato mirando a la cámara">
+
+        <h2>Posisciona el contingut relacionat entre si</h2>
+
+        <form>
+            <label>
+            Buscar
+            <input type="search" name="buscar">
+            </label>
+            <span class="error" aria-hidden>No s'han trobat resultats</span>
+            <button type="submit">Buscar</button>
+        </form>
+        
+        <h2>Suplantar etiquetes</h2>
+
+            <input type="checkbox" id="condiciones">
+            <label for="condiciones">Acepto las condiciones</label>
+
+            <span
+                role="checkbox"
+                aria-checked="false"
+                tabindex="0"
+                aria-labelledby="condiciones"></span>
+            <label id="condiciones">Acepto las condiciones</label>
+
+        <h2>Utilitza aria-live per actualitzar contingut dinàmic</h2>
+
+        <div aria-live="polite">
+            <p>El usuario Cervantes ha escrito un mensaje nuevo</p>
+        </div>
+
+        <h2>Convertir un logo en encapçalament de primer nivell</h2>
+
+        <a href="/" role="heading" aria-level="1">
+            <img
+                src="logo.svg"
+                alt="Logo"
+            >
+        </a>
+        
+        
+
+
+    
+
+     </body>
+
+</html>
