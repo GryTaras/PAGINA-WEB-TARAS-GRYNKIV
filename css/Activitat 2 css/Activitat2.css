@@ -1,4 +1,16 @@
 body {
-    color: yellow;
+    color: blue;
+   
+}
+
+p {
+    font-size: 3rem;
+    border: 1px solid black;
+}
+
+table {
+  
+    margin-left: 2.5rem;
+  
 }
 
