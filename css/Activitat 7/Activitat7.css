@@ -1,0 +1,10 @@
+.texto {
+    color: #123;
+}
+.caja {
+    background: red;
+    width: 14%;
+}
+.caja {
+    opacity: .5;
+}
