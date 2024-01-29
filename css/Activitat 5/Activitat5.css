@@ -1,0 +1,23 @@
+.planeta {
+    
+    background-color: blue;
+    &:hover {
+        background-color: red;
+    }
+    &::before {
+        content: '🪐';
+    }
+    &::after {
+        content: '🌎';
+    }
+}
+
+.planeta {
+    &.planeta--marte {
+        background-color: red;
+
+        @media (width < 600px) {
+            background-color: yellow;
+        }
+    }
+}
