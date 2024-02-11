@@ -67,7 +67,11 @@ nav ul li{
 }
 
 
+.missatge{
 
+    width: 500px;
+    height: 400px;
+}
 .clearfix{
     clear:both;
 }
